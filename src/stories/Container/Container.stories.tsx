@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Container } from "../../components/Container/Container";
+import { Container } from "../../components/Common/Container/Container";
 
 export default {
-    title: "templates/Container",
+    title: "Components/Container",
     component: Container ,
     argTypes: {},
 } as Meta<typeof Container >;

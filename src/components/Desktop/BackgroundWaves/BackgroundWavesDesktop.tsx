@@ -98,16 +98,14 @@ https://www.youtube.com/watch?v=tWAGIU3GUk4&t=93s&ab_channel=Divinector
 // -------------------------------------------------------------------
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from "./BackgroundWaves.module.css";
-import img1 from './images/1.png';
-import img2 from './images/2.png';
-import img3 from './images/3.png';
+import styles from "./BackgroundWavesDesktop.module.css";
+import img1 from '../../Common/BackgroundWaves/images/1.png';
+import img2 from '../../Common/BackgroundWaves/images/2.png';
+import img3 from '../../Common/BackgroundWaves/images/3.png';
 import Image from 'next/image';
-import { Navbar } from '../Navbar/Navbar';
 
-export const BackgroundWaves = (props: any) => 
+export const BackgroundWavesDesktop = (props: any) => 
 {
-    console.log(img1);
     return (<>
         <section className={styles.container}>
             <Image 
@@ -128,12 +126,12 @@ export const BackgroundWaves = (props: any) =>
     </>);
 }
 
-BackgroundWaves.defaultProps =
+BackgroundWavesDesktop.defaultProps =
 {
 
 }
 
-BackgroundWaves.propTypes = 
+BackgroundWavesDesktop.propTypes = 
 {
 
 }

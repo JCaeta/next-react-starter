@@ -1,8 +1,8 @@
 import { useRef, RefObject } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import styles from "./Navbar.module.css";
+import styles from "./NavbarDesktop.module.css";
 
-export const Navbar = () => {
+export const NavbarDesktop = () => {
     const navRef: RefObject<HTMLElement> = useRef(null);
 
     const showNavbar = () => {

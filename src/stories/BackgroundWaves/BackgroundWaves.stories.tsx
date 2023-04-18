@@ -1,37 +1,25 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { BackgroundWaves } from '../../components/BackgroundWaves/BackgroundWaves';
+import { BackgroundWavesDesktop } from '../../components/Desktop/BackgroundWaves/BackgroundWavesDesktop';
+import { BackgroundWavesMobile } from "../../components/Mobile/BackgroundWaves/BackgroundWavesMobile";
 import styles from './BackgroundWaves.module.css';
+import { heights1000 } from "../viewports";
 
 export default {
-    title: "templates/BackgroundWaves",
-    component: BackgroundWaves ,
+    title: "Components/BackgroundWaves",
+    component: BackgroundWavesDesktop ,
     argTypes: {},
-} as Meta<typeof BackgroundWaves >;
+    parameters: {
+        viewport: {viewports: heights1000}
+    }
+} as Meta<typeof BackgroundWavesDesktop >;
 
-type Story = StoryObj<typeof BackgroundWaves >;
+type Story = StoryObj<typeof BackgroundWavesDesktop >;
 
-const base: any = {
-//   sampleTextProp: "Hello world!",
-};
 
-export const mockBackgroundWavesProps = {
-    base,
-};
-
-// export const Base: Story = {
-//     args: mockBackgroundWavesProps.base,
-//     parameters: {},
-//     play: () => {
-//     },
-// };
-
-export const Primary: Story = {
+export const MobilePortrait: Story = {
     render: () =>{
         return(<>
-            {/* <section className={styles.container}>
-                <BackgroundWaves/>
-            </section> */}
-            <BackgroundWaves/>
+            <BackgroundWavesMobile mode={"portrait"}/>
         </>);
     } 
 };
